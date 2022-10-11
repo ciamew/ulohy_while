@@ -1,7 +1,13 @@
-meno = input("Zadaj meno alebo koniec:")
+#napíš program, ktorý bude V CYKLE načítavať mená a vypisvať ich dĺžku dovtedy, poikiaľ ako meno nezdáte reťazec "koniec"
+
+meno = input("Napis meno:")
+meno = str(meno)
+
+dlzka = 0
+
 while meno != "koniec":
-    dlzka = len(meno) #len returns the number of items in an object
-    print("Dlazka mena je ", dlzka)
-    meno = input("Zadaj meno alebo koniec: ")
-else:
-    print("Koniec.")
+    dlzka = len(meno)
+    print("Dlzka mena je:", dlzka)
+    meno = input("Napis dalsie meno:")
+    meno = str(meno)
+print("koniec")
